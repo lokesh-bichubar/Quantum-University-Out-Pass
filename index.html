@@ -420,8 +420,8 @@ window.setStatus = function(id, newStatus){
   const p = passes.find(x=>x.id===id);
   if(!p) return;
   p.status = newStatus;
-  if(newStatus==='APPROVED'){ p.reason=''; p.by='You (Admin)'; p.on=new Date().toISOString().slice(0,16); }
-  if(newStatus==='REJECTED'){ p.reason = p.reason || 'Rejected by admin'; p.by='You (Admin)'; p.on=new Date().toISOString().slice(0,16); }
+  if(newStatus==='APPROVED'){ p.reason=''; p.by='Akash Singh'; p.on=new Date().toISOString().slice(0,16); }
+  if(newStatus==='REJECTED'){ p.reason = p.reason || 'Rejected by admin'; p.by='Akash Singh'; p.on=new Date().toISOString().slice(0,16); }
   applyFilter(); // re-render with current filter
 }
 
